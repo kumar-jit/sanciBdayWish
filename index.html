@@ -456,8 +456,9 @@
                 const currentTime = new Date();
                 const timeDifference = targetDate - currentTime;
 
+                // count calculation
                 // If the countdown is over, clear the interval and update the message
-                if (timeDifference > 0) {
+                if (timeDifference <= 0) {
                     clearInterval(countdownInterval);
                     daysEl.textContent = "00";
                     hoursEl.textContent = "00";
