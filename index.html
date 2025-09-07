@@ -464,15 +464,15 @@
                     hoursEl.textContent = "00";
                     minutesEl.textContent = "00";
                     secondsEl.textContent = "00";
-                    document.getElementById("cake").style.visibility =
-                        "visible";
+                    document.getElementById("cake").style.display =
+                        "flex";
                     document.getElementById("loading").style.display =
                         "none";
                     return;
                 } else {
-                    document.getElementById("cake").style.visibility = "hidden";
-                    document.getElementById("loading").style.visibility =
-                        "visible";
+                    document.getElementById("cake").style.display = "none";
+                    document.getElementById("loading").style.display =
+                        "flex";
                 }
 
                 // Calculate days, hours, minutes, and seconds from the time difference
